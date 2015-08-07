@@ -7,7 +7,7 @@ cou1 <- cou[cou$Date1 == '2007-02-01' | cou$Date1 == '2007-02-02' ,]
 cou1$Global_active_power1 <- as.numeric(as.character(cou1$Global_active_power))
 cou1$Voltage <- as.numeric(as.character(cou1$Voltage))
 
-png(filename="F:/KG/per/coursera/explor/exdata-data-household_power_consumption/plot4.png")
+png(filename="F:/KG/per/coursera/explor/exdata-data-household_power_consumption/plot4.png",width=480,height=480)
 par(mar=c(2,4,1,1))
 par(mfrow=c(2,2))
 plot(cou1$datetim1,cou1$Global_active_power1,type="l",xlab="",ylab="Global Active Power")
